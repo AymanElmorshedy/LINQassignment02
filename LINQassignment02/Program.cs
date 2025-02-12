@@ -21,11 +21,22 @@ namespace LINQassignment02
             #endregion
 
             #region Q03
-            int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
-            var result = Arr.Where(n=>n>5).ElementAt(1);
-            Console.WriteLine(result);
+            //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var result = Arr.Where(n=>n>5).ElementAt(1);
+            //Console.WriteLine(result);
             #endregion
 
+            #endregion
+
+            #region LINQ - Aggregate Operators
+            #region Q01
+
+
+            int[] Numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            var result = Numbers.Count(n=>n%2==1);
+            Console.WriteLine(result);
+
+            #endregion
             #endregion
         }
     }
