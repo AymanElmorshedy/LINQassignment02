@@ -91,12 +91,20 @@ namespace LINQassignment02
             #endregion
 
             #region Q02
-            var ProductLetters = ProductsList.Select(p => p.ProductName[0]).Distinct();
-            var CoustmerLetters= CustomersList.Select(c => c.CustomerName[0]).Distinct();
-            var result = ProductLetters.Union(CoustmerLetters).ToList();
-            foreach (var item in result)
-                Console.WriteLine(item);
+            //var ProductLetters = ProductsList.Select(p => p.ProductName[0]).Distinct();
+            //var CoustmerLetters= CustomersList.Select(c => c.CustomerName[0]).Distinct();
+            //var result = ProductLetters.Union(CoustmerLetters).ToList();
+            //foreach (var item in result)
+            //    Console.WriteLine(item);
 
+            #endregion
+
+            #region Q03
+            var CoustmerLetters = CustomersList.Select(c => c.CustomerName[0]).Distinct();
+            var Productletters = ProductsList.Select(c => c.ProductName[0]).Distinct();
+            var result = Productletters.Intersect(CoustmerLetters);
+            foreach(var item in result)
+                Console.Write($"{item} ");
             #endregion
             #endregion
         }
