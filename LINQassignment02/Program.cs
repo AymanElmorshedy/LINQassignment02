@@ -51,15 +51,15 @@ namespace LINQassignment02
             #endregion
 
             #region Q04
-            int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
-            var resuly = Arr.Count();
-            Console.WriteLine(resuly);
+            //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var resuly = Arr.Count();
+            //Console.WriteLine(resuly);
             #endregion
-            //string[] dictionaryWords = File.ReadAllLines("dictionary_english.txt");
+            string[] dictionaryWords = File.ReadAllLines("dictionary_english.txt");
             #region Q05
 
-            //var result = dictionaryWords.Count();
-            //Console.WriteLine(result);
+            var result = dictionaryWords.Count();
+            Console.WriteLine(result);
             #endregion
 
             #region Q06
