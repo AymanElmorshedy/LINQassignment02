@@ -68,13 +68,13 @@ namespace LINQassignment02
             #endregion
 
             #region Q07
-            var result = dictionaryWords.Max(x => x.Length);
-            Console.WriteLine(result);
+            //var result = dictionaryWords.Max(x => x.Length);
+            //Console.WriteLine(result);
             #endregion
 
             #region Q08
-            //var result = dictionaryWords.Average(d=>d.Length);
-            //Console.WriteLine(result);
+            var result = dictionaryWords.Average(d => d.Length);
+            Console.WriteLine(result);
             #endregion
             #endregion
         }
