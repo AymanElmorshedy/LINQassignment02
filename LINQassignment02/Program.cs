@@ -10,9 +10,14 @@ namespace LINQassignment02
         {
             #region LINQ - Element Operators
             #region Q01
-            var result = ProductsList.Where(p=>p.UnitsInStock==0).First();
-            Console.WriteLine(result);
+            //var result = ProductsList.Where(p=>p.UnitsInStock==0).First();
+            //Console.WriteLine(result);
 
+            #endregion
+
+            #region Q02
+            var result = ProductsList.Where(p=>p.UnitPrice>1000).FirstOrDefault();
+            Console.WriteLine(result);
             #endregion
 
             #endregion
