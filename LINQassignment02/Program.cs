@@ -37,16 +37,17 @@ namespace LINQassignment02
             //Console.WriteLine(result);
 
             #endregion
+
             #region Q02
-            var Result = CustomersList.Select(c => new { customerId = c.CustomerID, customerName = c.CustomerName, OrderCount = c.Orders.Count() });
-            foreach (var item in Result)
-                Console.WriteLine(item);
+            //var Result = CustomersList.Select(c => new { customerId = c.CustomerID, customerName = c.CustomerName, OrderCount = c.Orders.Count() });
+            //foreach (var item in Result)
+            //    Console.WriteLine(item);
             #endregion
 
             #region Q03
-            //var result = ProductsList.GroupBy(p=>p.Category).Select(p=> new {categoryName=p.Key,productCount=p.Count()});
-            //foreach(var item in result)
-            //    Console.WriteLine(item);
+            var result = ProductsList.GroupBy(p => p.Category).Select(p => new { categoryName = p.Key, productCount = p.Count() });
+            foreach (var item in result)
+                Console.WriteLine(item);
             #endregion
 
             #region Q04
