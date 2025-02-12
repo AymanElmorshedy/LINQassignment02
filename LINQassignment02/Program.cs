@@ -16,7 +16,13 @@ namespace LINQassignment02
             #endregion
 
             #region Q02
-            var result = ProductsList.Where(p=>p.UnitPrice>1000).FirstOrDefault();
+            //var result = ProductsList.Where(p=>p.UnitPrice>1000).FirstOrDefault();
+            //Console.WriteLine(result);
+            #endregion
+
+            #region Q03
+            int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            var result = Arr.Where(n=>n>5).ElementAt(1);
             Console.WriteLine(result);
             #endregion
 
