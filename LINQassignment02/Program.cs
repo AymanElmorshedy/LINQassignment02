@@ -89,6 +89,15 @@ namespace LINQassignment02
             //}
 
             #endregion
+
+            #region Q02
+            var ProductLetters = ProductsList.Select(p => p.ProductName[0]).Distinct();
+            var CoustmerLetters= CustomersList.Select(c => c.CustomerName[0]).Distinct();
+            var result = ProductLetters.Union(CoustmerLetters).ToList();
+            foreach (var item in result)
+                Console.WriteLine(item);
+
+            #endregion
             #endregion
         }
     }
