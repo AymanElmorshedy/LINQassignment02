@@ -55,7 +55,7 @@ namespace LINQassignment02
             //var resuly = Arr.Count();
             //Console.WriteLine(resuly);
             #endregion
-            string[] dictionaryWords = File.ReadAllLines("dictionary_english.txt");
+            //string[] dictionaryWords = File.ReadAllLines("dictionary_english.txt");
             #region Q05
 
             //var result = dictionaryWords.Count();
@@ -73,8 +73,21 @@ namespace LINQassignment02
             #endregion
 
             #region Q08
-            var result = dictionaryWords.Average(d => d.Length);
-            Console.WriteLine(result);
+            //var result = dictionaryWords.Average(d => d.Length);
+            //Console.WriteLine(result);
+            #endregion
+            #endregion
+
+            #region LINQ - Set Operators => Union Family in SQl
+            #region Q01
+            //var result = ProductsList.Where(p => p.UnitsInStock > 0).GroupBy(p => p.Category).ToList();
+            //foreach (var category in result)
+            //{
+            //    Console.WriteLine($"{category.Key}");//Name of Category
+            //    foreach (var product in category)
+            //        Console.WriteLine($"                {product.ProductName}");
+            //}
+
             #endregion
             #endregion
         }
